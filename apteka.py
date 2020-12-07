@@ -22,7 +22,7 @@ with open("result.csv", "w", encoding='utf-8') as file:
         soup = BeautifulSoup(rs.content, 'html.parser')
 
         for tr in soup.find("table").select("tbody > tr"):
-            # Считаем, что если нет адреса, то нет данных в таблице
+            
             address = tr.select_one('.col_address > a')
             if not address:
                 break

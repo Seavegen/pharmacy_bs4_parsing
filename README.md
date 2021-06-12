@@ -1,1 +1,1 @@
-# apteka_bs4
+# pharmacy_parsing
